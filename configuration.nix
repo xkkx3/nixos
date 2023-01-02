@@ -101,11 +101,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     vim
+     neovim
      wget
      curl
      less
      unzip
+     python311
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -115,6 +116,9 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+
+  # Aliases
+    programs.neovim.vimAlias = true;
 
   # List services that you want to enable:
 
