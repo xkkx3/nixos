@@ -1,0 +1,8 @@
+[FileDialogSize]
+eDP-1 Height 1280x720 eDP-1=676
+eDP-1 Width 1280x720 eDP-1=632
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/snow.jpg,file:$HOME/Downloads/configuration.nix,file:$HOME/Pictures/Slideshow/lacy_kentucky.jpg
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/,file:$HOME/Pictures/,file:$HOME/Pictures/Slideshow/,file:$HOME/Documents/
+detailViewIconSize=16

@@ -1,0 +1,14 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[GuiConfig]
+window-position=0,0
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/sdande_trading.png,file:$HOME/Pictures/python_question.png
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/
+detailViewIconSize=16
+
+[Save]
+lastSaveAsLocation=file:///home/xkkx3/Pictures/python_question.png
+lastSaveLocation=file:///home/xkkx3/Pictures/python_question.png

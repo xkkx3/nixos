@@ -1,0 +1,14 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10e169786f000167262297100000011450004
+count=1
+discardCommand1[$e]=rm,$HOME/.config/session/systemsettings_10e169786f000167262297100000011450004_1672623016_178309
+program1=/etc/profiles/per-user/xkkx3/bin/systemsettings
+restartCommand1=/etc/profiles/per-user/xkkx3/bin/systemsettings,-session,10e169786f000167262297100000011450004_1672623016_178309,-name,systemsettings
+restartStyleHint1=0
+userId1=xkkx3
