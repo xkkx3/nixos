@@ -83,7 +83,7 @@
   users.users.xkkx3 = {
     isNormalUser = true;
     description = "Kristopher Kiel";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [
       brave
       discord
@@ -92,6 +92,26 @@
       kitty
       libsForQt5.bismuth
       gnome-network-displays
+      virt-manager
+      mgba
+      qemu
+      libvirt
+      megasync
+      syncthing
+      mpv
+      vlc
+      newsflash
+      dbeaver
+      zoom
+      tlp
+      yt-dlp
+      simplescreenrecorder
+      video-trimmer
+      libreoffice-fresh
+      keepassxc
+      vscodium
+      python310Packages.pandas
+      python310
     ];
   };
 
@@ -106,7 +126,9 @@
      curl
      less
      unzip
-     python311
+     htop
+     zulu
+     neofetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -118,9 +140,13 @@
   # };
 
   # Aliases
-    programs.neovim.vimAlias = true;
+  # programs.neovim.vimAlias = true;
 
   # List services that you want to enable:
+
+  # Enable Virt-Manager
+    virtualisation.libvirtd.enable = true;
+    programs.dconf.enable = true;
 
   # Enable Bluetooth
     hardware.bluetooth.enable = true;
@@ -134,9 +160,16 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
+  # Less logs (Faster boot time)
+    services.journald.extraConfig = "SystemMaxUse=1G";
+
   # Automatic Upgrades
     system.autoUpgrade.enable = true;
     system.autoUpgrade.allowReboot = false;
+
+  # Automatic Garbage Collection
+    nix.gc.automatic = true;
+    nix.gc.dates = "04:00";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
