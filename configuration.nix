@@ -83,7 +83,7 @@
   users.users.xkkx3 = {
     isNormalUser = true;
     description = "Kristopher Kiel";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "nix" ];
     packages = with pkgs; [
       brave
       discord
@@ -110,8 +110,8 @@
       libreoffice-fresh
       keepassxc
       vscodium
+      python3Full
       python310Packages.pandas
-      python310
     ];
   };
 
