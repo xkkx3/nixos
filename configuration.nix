@@ -110,7 +110,6 @@
       libreoffice-fresh
       keepassxc
       vscodium
-      python3Full
       python310Packages.pandas
     ];
   };
@@ -121,7 +120,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     neovim
+     vim
      wget
      curl
      less
@@ -129,6 +128,7 @@
      htop
      zulu
      neofetch
+     python3Full
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
